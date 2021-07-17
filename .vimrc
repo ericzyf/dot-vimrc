@@ -23,6 +23,7 @@ set updatetime=100
 " show trailing spaces
 set list
 set listchars=trail:~
+set hlsearch
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
