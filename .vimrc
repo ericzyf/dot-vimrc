@@ -5,6 +5,7 @@ set autoindent
 set lazyredraw
 set mouse=a
 set nowrap
+set laststatus=2
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
