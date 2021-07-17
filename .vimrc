@@ -1,12 +1,14 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'jnurmine/Zenburn'
+Plug 'morhetz/gruvbox'
 Plug 'mhinz/vim-signify'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
 
 syntax on
+set background=dark
 set nu rnu
 set ts=4 sw=4 sts=4 et
 set autoindent
@@ -24,4 +26,4 @@ inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
 set t_Co=256
-colorscheme zenburn
+colorscheme gruvbox
