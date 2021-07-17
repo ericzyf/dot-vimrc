@@ -1,8 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'jnurmine/Zenburn'
+Plug 'mhinz/vim-signify'
 
 call plug#end()
+
 
 syntax on
 set nu rnu
@@ -14,6 +16,7 @@ set nowrap
 set laststatus=2
 set showcmd
 set cursorline
+set updatetime=100
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
