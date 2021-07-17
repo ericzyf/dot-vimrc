@@ -14,6 +14,7 @@ set ts=4 sw=4 sts=4 et
 set autoindent
 set lazyredraw
 set mouse=a
+set ttymouse=sgr
 set nowrap
 set laststatus=2
 set showcmd
