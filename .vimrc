@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'mhinz/vim-signify'
-Plug 'sheerun/vim-polyglot'
+Plug 'bfrg/vim-cpp-modern'
 
 call plug#end()
 
