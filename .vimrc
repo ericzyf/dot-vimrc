@@ -6,6 +6,7 @@ set lazyredraw
 set mouse=a
 set nowrap
 set laststatus=2
+set showcmd
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
