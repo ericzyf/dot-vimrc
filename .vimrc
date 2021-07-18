@@ -30,6 +30,7 @@ set wildmenu
 " status line
 set statusline=%<▌%f\ %H%M%R%=%y\ %p%%\ %l:%c%V\ ≡\ 
 set scrolloff=1
+set tags=./tags;
 
 " map <Leader> to <Space>
 let mapleader=' '
@@ -39,6 +40,8 @@ inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 nnoremap <Leader>` :bel terminal<CR>
 nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>t :Tags<CR>
+nnoremap <Leader>bt :BTags<CR>
 
 set t_Co=256
 colorscheme gruvbox
