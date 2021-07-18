@@ -25,6 +25,7 @@ set list
 set listchars=trail:~
 set hlsearch
 set incsearch
+set wildmenu
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
