@@ -28,7 +28,7 @@ set hlsearch
 set incsearch
 set wildmenu
 " status line
-set statusline=%<%f\ %H%M%R%=%y\ %p%%\ %l:%c%V
+set statusline=%<\ %f\ %H%M%R%=%y\ %p%%\ %l:%c%V\ 
 set scrolloff=1
 
 " map <Leader> to <Space>
