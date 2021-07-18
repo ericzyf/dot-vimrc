@@ -23,12 +23,12 @@ set showcmd
 set cursorline
 set updatetime=100
 " show tabs, trailing spaces
-set list listchars=trail:~,tab:>-
+set list listchars=trail:·,tab:»·
 set hlsearch
 set incsearch
 set wildmenu
 " status line
-set statusline=%<\ %f\ %H%M%R%=%y\ %p%%\ %l:%c%V\ 
+set statusline=%<▌%f\ %H%M%R%=%y\ %p%%\ %l:%c%V\ ≡\ 
 set scrolloff=1
 
 " map <Leader> to <Space>
