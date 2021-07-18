@@ -36,6 +36,7 @@ if has('unnamedplus')
   set clipboard=unnamedplus
 endif
 set backspace=indent,eol,start
+set matchpairs+=<:>
 
 " map <Leader> to <Space>
 let mapleader=' '
