@@ -35,6 +35,7 @@ set tags=./tags;
 if has('unnamedplus')
   set clipboard=unnamedplus
 endif
+set backspace=indent,eol,start
 
 " map <Leader> to <Space>
 let mapleader=' '
