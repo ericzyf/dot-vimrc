@@ -31,6 +31,9 @@ set wildmenu
 set statusline=%<▌%f\ %H%M%R%=%y\ %p%%\ %l:%c%V\ ≡\ 
 set scrolloff=1
 set tags=./tags;
+if has('unnamedplus')
+  set clipboard=unnamedplus
+endif
 
 " map <Leader> to <Space>
 let mapleader=' '
