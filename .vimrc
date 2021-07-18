@@ -26,6 +26,8 @@ set listchars=trail:~
 set hlsearch
 set incsearch
 set wildmenu
+" status line
+set statusline=%<%f\ %H%M%R%=%y\ %p%%\ %l:%c%V
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
