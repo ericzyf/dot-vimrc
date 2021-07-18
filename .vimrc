@@ -24,6 +24,7 @@ set updatetime=100
 set list
 set listchars=trail:~
 set hlsearch
+set incsearch
 
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
