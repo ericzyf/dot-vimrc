@@ -51,3 +51,6 @@ nnoremap <Leader>bt :BTags<CR>
 
 set t_Co=256
 colorscheme gruvbox
+let g:signify_sign_add='▌'
+let g:signify_sign_change='█'
+
