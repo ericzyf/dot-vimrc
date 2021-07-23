@@ -23,8 +23,8 @@ set laststatus=2
 set showcmd
 set cursorline
 set updatetime=100
-" show tabs, trailing spaces
-set list listchars=trail:·,tab:»·
+" show tabs, trailing spaces, eol
+set list listchars=trail:·,tab:»·,eol:‸
 set hlsearch
 set incsearch
 set wildmenu
