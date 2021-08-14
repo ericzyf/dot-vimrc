@@ -49,6 +49,8 @@ nnoremap <Leader>` :bel terminal<CR>
 nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>t :Tags<CR>
 nnoremap <Leader>bt :BTags<CR>
+nnoremap <Leader>d :SignifyDiff<CR>
+nnoremap <Leader>w :tabclose<CR>
 
 set t_Co=256
 colorscheme gruvbox
