@@ -5,6 +5,7 @@ Plug 'mhinz/vim-signify'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -55,3 +56,10 @@ let &t_ut=''
 let g:signify_sign_add='▌'
 let g:signify_sign_change='█'
 
+let g:ale_linters_explicit=1
+let g:ale_linters={
+  \ 'c': ['cc'],
+  \ 'cpp': ['cc'],
+  \ }
+let g:ale_c_cc_options='-Wall -Wextra -pedantic'
+let g:ale_cpp_cc_options='-std=c++11 -Wall -Wextra -pedantic'
