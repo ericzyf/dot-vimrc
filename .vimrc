@@ -15,6 +15,7 @@ set encoding=utf-8
 set background=dark
 set nu rnu
 set ts=4 sw=4 sts=4 et
+set shiftround
 set autoindent
 set lazyredraw
 set mouse=a
