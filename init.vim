@@ -121,6 +121,7 @@ let mapleader=' '
 nnoremap <Leader>n :NvimTreeToggle<CR>
 nnoremap <Leader>f :Telescope find_files<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
+nnoremap <Leader>o :SymbolsOutline<CR>
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
