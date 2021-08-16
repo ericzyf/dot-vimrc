@@ -119,6 +119,8 @@ set completeopt=menuone,noselect
 let mapleader=' '
 nnoremap <Leader>n :NvimTreeToggle<CR>
 nnoremap <Leader>f :Telescope find_files<CR>
+nnoremap <Leader>t :Telescope current_buffer_tags<CR>
+nnoremap <Leader>T :Telescope tags<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
 nnoremap <Leader>o :SymbolsOutline<CR>
 inoremap <C-h> <Left>
