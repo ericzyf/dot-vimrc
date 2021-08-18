@@ -39,6 +39,7 @@ if has('unnamedplus')
 endif
 set backspace=indent,eol,start
 set matchpairs+=<:>
+set splitright splitbelow
 
 " map <Leader> to <Space>
 let mapleader=' '
