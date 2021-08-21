@@ -97,7 +97,7 @@ vim.g.symbols_outline = {
 }
 EOF
 
-set statusline=%<▌%f\ %H%M%R%=%y\ %p%%\ %l:%v\ 
+set statusline=%<▌%f\ %y\ %H%M%R%=%p%%\ %l:%v\ 
 set termguicolors
 colorscheme nightfly
 set nowrap
