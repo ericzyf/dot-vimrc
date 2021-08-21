@@ -11,8 +11,8 @@ let loaded_gzip=1
 
 call plug#begin(stdpath('data') . '/plugged')
 Plug 'bluz71/vim-nightfly-guicolors'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'branch': '0.5-compat', 'do': ':TSUpdate'}
 Plug 'mhinz/vim-signify'
 Plug 'kyazdani42/nvim-tree.lua'
@@ -119,9 +119,9 @@ set splitright splitbelow
 
 let mapleader=' '
 nnoremap <Leader>n :NvimTreeToggle<CR>
-nnoremap <Leader>f :Telescope find_files<CR>
-nnoremap <Leader>t :Telescope current_buffer_tags<CR>
-nnoremap <Leader>T :Telescope tags<CR>
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>T :Tags<CR>
+nnoremap <Leader>t :BTags<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
 nnoremap <Leader>o :SymbolsOutline<CR>
 nnoremap <C-h> <C-w>h
