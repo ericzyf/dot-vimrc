@@ -124,6 +124,10 @@ nnoremap <Leader>t :Telescope current_buffer_tags<CR>
 nnoremap <Leader>T :Telescope tags<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
 nnoremap <Leader>o :SymbolsOutline<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
