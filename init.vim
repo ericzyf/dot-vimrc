@@ -22,6 +22,7 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'simrat39/symbols-outline.nvim'
 call plug#end()
 
+let g:fzf_layout={'down': '50%'}
 let g:signify_sign_add='▌'
 let g:signify_sign_change='▌'
 let g:nvim_tree_auto_close=1
