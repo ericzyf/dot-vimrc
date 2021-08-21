@@ -57,6 +57,7 @@ nnoremap <Leader>T :Tags<CR>
 nnoremap <Leader>t :BTags<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
 nnoremap <Leader>w :tabclose<CR>
+nnoremap ; :
 
 set t_Co=256
 colorscheme gruvbox
