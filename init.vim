@@ -152,6 +152,7 @@ set shada=""
 set completeopt=menuone,noselect
 set splitright splitbelow
 set confirm
+set nohidden
 
 let mapleader=' '
 nnoremap <Leader>n :NvimTreeToggle<CR>
