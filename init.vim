@@ -162,6 +162,7 @@ nnoremap <Leader>t :BTags<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
 nnoremap <Leader>o :SymbolsOutline<CR>
 nnoremap ; :
+nnoremap <BS> :noh<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
