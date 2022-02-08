@@ -1,22 +1,32 @@
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'liuchengxu/space-vim-dark'
-Plug 'bfrg/vim-cpp-modern'
-Plug 'itchyny/lightline.vim'
+Plug 'EdenEast/nightfox.nvim'
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/nvim-cmp'
-Plug 'mhinz/vim-signify'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 
-let g:fzf_layout={'down': '60%'}
+let g:fzf_layout={'down': '55%'}
 
 lua << END
 require'todo-comments'.setup()
+require'lualine'.setup()
+require'gitsigns'.setup()
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"c", "cpp"},
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false
+  }
+}
 
 local cmp = require'cmp'
 
@@ -34,13 +44,9 @@ cmp.setup({
 })
 END
 
-let g:lightline = {
- \ 'colorscheme': 'darcula',
- \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
- \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }}
 set termguicolors
 set background=dark
-colorscheme space-vim-dark
+colorscheme nightfox
 set cursorline
 set noshowmode
 set nowrap
@@ -56,11 +62,10 @@ set splitright splitbelow
 set confirm
 set synmaxcol=300
 
-hi LineNr guibg=NONE
-
 let mapleader=' '
-nnoremap <Leader>d :SignifyDiff<CR>
-nnoremap <A-d> :SignifyHunkDiff<CR>
+nnoremap ]c :Gitsigns next_hunk<CR>
+nnoremap [c :Gitsigns prev_hunk<CR>
+nnoremap <Leader>d :Gitsigns diffthis<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap ; :
 nnoremap <BS> :noh<CR>
