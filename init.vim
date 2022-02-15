@@ -10,7 +10,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'lewis6991/gitsigns.nvim'
+Plug 'mhinz/vim-signify'
 call plug#end()
 
 let g:fzf_layout={'down': '55%'}
@@ -18,7 +18,6 @@ let g:fzf_layout={'down': '55%'}
 lua << END
 require'todo-comments'.setup()
 require'lualine'.setup()
-require'gitsigns'.setup()
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {"c", "cpp"},
@@ -63,9 +62,8 @@ set confirm
 set synmaxcol=300
 
 let mapleader=' '
-nnoremap ]c :Gitsigns next_hunk<CR>
-nnoremap [c :Gitsigns prev_hunk<CR>
-nnoremap <Leader>d :Gitsigns diffthis<CR>
+nnoremap <Leader>d :SignifyDiff<CR>
+nnoremap <A-d> :SignifyHunkDiff<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap ; :
 nnoremap <BS> :noh<CR>
