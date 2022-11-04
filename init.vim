@@ -1,23 +1,31 @@
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'EdenEast/nightfox.nvim'
+Plug 'srcery-colors/srcery-vim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'mhinz/vim-signify'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'folke/todo-comments.nvim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'mhinz/vim-signify'
+Plug 'stevearc/aerial.nvim'
 call plug#end()
 
-let g:fzf_layout={'down': '55%'}
+let g:fzf_layout={'down': '50%'}
 
 lua << END
 require'todo-comments'.setup()
-require'lualine'.setup()
+require'lualine'.setup {
+  sections = {
+    lualine_c = {
+      {'filename', path = 1}
+    }
+  }
+}
+
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {"c", "cpp"},
@@ -41,14 +49,18 @@ cmp.setup({
     { name = 'path' }
   })
 })
+
+require'aerial'.setup({
+  default_direction = "prefer_left"
+})
 END
 
 set termguicolors
 set background=dark
-colorscheme nightfox
-set cursorline
+colorscheme srcery
 set noshowmode
 set nowrap
+set cursorline
 set nu rnu
 set ts=4 sw=4 sts=-1 et
 set shiftround
@@ -62,6 +74,7 @@ set confirm
 set synmaxcol=300
 
 let mapleader=' '
+nnoremap <Leader>a :AerialToggle!<CR>
 nnoremap <Leader>d :SignifyDiff<CR>
 nnoremap <A-d> :SignifyHunkDiff<CR>
 nnoremap <leader>f :Files<CR>
